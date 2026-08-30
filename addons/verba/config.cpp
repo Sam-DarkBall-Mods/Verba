@@ -5,7 +5,7 @@ class CfgPatches
 	{
 		name="VERBA";
 		author="Sem";
-		requiredVersion=2;
+		requiredVersion = 2.22;
 		requiredAddons[]=
 		{
 			"A3_Weapons_F_Launchers_Titan",
@@ -176,7 +176,6 @@ class CfgVehicles
         class TransportItems {};
     };
 };
-
 
 
 
