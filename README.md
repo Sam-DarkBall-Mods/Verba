@@ -2,26 +2,25 @@
 
 [![CI](https://github.com/Sam-DarkBall-Mods/Verba/actions/workflows/ci.yml/badge.svg)](https://github.com/Sam-DarkBall-Mods/Verba/actions/workflows/ci.yml)
 
-9K333 Verba man-portable air-defence system for Arma 3.
+Verba adds the 9K333 shoulder fired air defence launcher. It includes the 9M336
+missile, its magazine, an infrared sensor configuration and the weapon model.
 
 ## Requirements
 
 - Arma 3 2.22 or newer
-- Additional runtime dependencies declared by `CfgPatches`
 
-## Development
+## Building
 
 ```bash
+python3 -B -m unittest discover -s tests -p "test_*.py" -v
 hemtt check
 hemtt build --no-bin
-python3 -B -m unittest discover -s tests -p "test_*.py" -v
 ```
 
-Legacy `CfgPatches`, function names, virtual PBO prefixes, and release PBO
-filenames are compatibility contracts and must not change in a patch release.
+The existing weapon, magazine and ammunition classes are unchanged. The PBO
+continues to use the `verba` prefix.
 
 ## License
 
-SQF, Arma configuration, and tooling are GPL-2.0-or-later. Original Arma
-models, textures, materials, animations, and audio are APL-SA. See
-[LICENSES.md](LICENSES.md) and closer notices.
+Code and configs use GPL-2.0-or-later. Original models, textures, animations and
+audio use APL-SA. See [LICENSES.md](LICENSES.md).
